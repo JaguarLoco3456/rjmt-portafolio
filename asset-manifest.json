@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/rjmt-portafolio/static/css/main.05b398e3.css",
-    "main.js": "/rjmt-portafolio/static/js/main.7aa60e38.js",
+    "main.css": "/rjmt-portafolio/static/css/main.cae73c48.css",
+    "main.js": "/rjmt-portafolio/static/js/main.b4ae4fc7.js",
     "static/js/453.aae4b3bf.chunk.js": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js",
     "static/media/avatar.png": "/rjmt-portafolio/static/media/avatar.84c1f4a2dd5296536af0.png",
+    "static/media/experiencia.jpg": "/rjmt-portafolio/static/media/experiencia.581d45be180e0a455c1c.jpg",
     "index.html": "/rjmt-portafolio/index.html",
-    "main.05b398e3.css.map": "/rjmt-portafolio/static/css/main.05b398e3.css.map",
-    "main.7aa60e38.js.map": "/rjmt-portafolio/static/js/main.7aa60e38.js.map",
+    "main.cae73c48.css.map": "/rjmt-portafolio/static/css/main.cae73c48.css.map",
+    "main.b4ae4fc7.js.map": "/rjmt-portafolio/static/js/main.b4ae4fc7.js.map",
     "453.aae4b3bf.chunk.js.map": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05b398e3.css",
-    "static/js/main.7aa60e38.js"
+    "static/css/main.cae73c48.css",
+    "static/js/main.b4ae4fc7.js"
   ]
 }

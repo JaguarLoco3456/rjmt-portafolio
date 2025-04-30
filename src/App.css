@@ -61,12 +61,13 @@
 
 .experience-img {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px; /* antes era 600px */
   margin: 30px auto 0;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   display: block;
 }
+
 
 .perfil-contenedor {
   display: flex;

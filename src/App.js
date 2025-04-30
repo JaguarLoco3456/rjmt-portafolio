@@ -19,8 +19,8 @@ function App() {
           <div className="info-box">
             <h2>Ramón Javier Monroy Torre</h2>
             <p><strong>Teléfono:</strong> +52 56 1800 3081</p>
-            <p><strong>Empresa:</strong>Sinnia, Data Laboratory</p>
-            <p><strong>Puesto:</strong>Senior Data Analyst</p>
+            <p><strong>Empresa:</strong> Sinnia, Data Laboratory</p>
+            <p><strong>Puesto:</strong> Senior Data Analyst</p>
             <p><strong>Email:</strong> javitorresin40@gmail.com</p>
           </div>
         </div>
@@ -43,7 +43,7 @@ function App() {
         <section className="experience">
           <h2>Mi experiencia laboral</h2>
           <p>
-            Soy analista de datos con experiencia en el tratamiento de grandes volúmenes de datos estructurados. En mi día a día, desarrollo soluciones que procesan millones de caracteres a través de consultas SQL optimizadas y pipelines automatizados.
+            Soy analista de datos con más de 5 años de experiencia en el tratamiento de grandes volúmenes de datos estructurados. En mi día a día, desarrollo soluciones que procesan millones de caracteres a través de consultas SQL optimizadas y pipelines automatizados.
           </p>
           <p>
             Trabajo con herramientas como <strong>Python, SQL, Looker, Tableau, BigQuery</strong> y desarrollo procesos ETL eficientes para transformar datos complejos en visualizaciones y reportes accionables.

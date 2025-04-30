@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/rjmt-portafolio/static/css/main.2b86fd73.css",
-    "main.js": "/rjmt-portafolio/static/js/main.4b58fe99.js",
+    "main.js": "/rjmt-portafolio/static/js/main.527e8e00.js",
     "static/js/453.aae4b3bf.chunk.js": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js",
     "static/media/avatar.png": "/rjmt-portafolio/static/media/avatar.84c1f4a2dd5296536af0.png",
     "static/media/experiencia.jpg": "/rjmt-portafolio/static/media/experiencia.581d45be180e0a455c1c.jpg",
     "index.html": "/rjmt-portafolio/index.html",
     "main.2b86fd73.css.map": "/rjmt-portafolio/static/css/main.2b86fd73.css.map",
-    "main.4b58fe99.js.map": "/rjmt-portafolio/static/js/main.4b58fe99.js.map",
+    "main.527e8e00.js.map": "/rjmt-portafolio/static/js/main.527e8e00.js.map",
     "453.aae4b3bf.chunk.js.map": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b86fd73.css",
-    "static/js/main.4b58fe99.js"
+    "static/js/main.527e8e00.js"
   ]
 }

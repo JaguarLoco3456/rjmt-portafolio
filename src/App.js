@@ -2,10 +2,15 @@
 import './App.css';
 import React, { useState } from 'react';
 import avatar from './assets/avatar.png';
+import experienciaImg from './assets/experiencia.jpg'; // <- Nueva imagen
 import { FaLaptopCode, FaStar, FaGamepad } from 'react-icons/fa';
 
 function App() {
   const [mostrarExperiencia, setMostrarExperiencia] = useState(false);
+
+  const toggleExperiencia = () => {
+    setMostrarExperiencia((prev) => !prev);
+  };
 
   return (
     <div className="App">
@@ -20,7 +25,7 @@ function App() {
         <Card
           icon={<FaLaptopCode size={40} />}
           title="Mi experiencia laboral"
-          onClick={() => setMostrarExperiencia(true)}
+          onClick={toggleExperiencia}
         />
         <Card icon={<FaStar size={40} />} title="Mis logros" />
       </section>
@@ -40,6 +45,7 @@ function App() {
           <p>
             Mi enfoque combina <strong>automatización, storytelling de datos y rendimiento en redes sociales</strong> para transformar información en decisiones estratégicas.
           </p>
+          <img src={experienciaImg} alt="Visual de experiencia" className="experience-img" />
         </section>
       )}
     </div>

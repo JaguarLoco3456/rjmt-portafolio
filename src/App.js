@@ -5,11 +5,27 @@ import experienciaImg from './assets/experiencia.jpg';
 import { FaLaptopCode, FaStar, FaGamepad } from 'react-icons/fa';
 
 function App() {
+
+  /*Constante para el bloque de Mostrar Experiencia*/
   const [mostrarExperiencia, setMostrarExperiencia] = useState(false);
 
   const toggleExperiencia = () => {
     setMostrarExperiencia((prev) => !prev);
   };
+
+  /*Constante para el bloque de Mostrar Hobbies*/
+  const [mostrarHobbies, setMostrarHobbies] = useState(false);
+
+  const toggleHobbies = () => {
+    setMostrarHobbies((prev) => !prev);
+  };
+
+/*Constante para el bloque de Mostrar Logros*/
+const [mostrarlogros, setMostrarlogros] = useState(false);
+
+const togglelogros = () => {
+  setMostrarlogros((prev) => !prev);
+};
 
   return (
     <div className="App">
@@ -35,8 +51,14 @@ function App() {
           title="Mi experiencia laboral"
           onClick={toggleExperiencia}
         />
-        <Card icon={<FaGamepad size={40} />} title="Mis hobbies" />
-        <Card icon={<FaStar size={40} />} title="Mis logros" />
+        <Card icon={<FaGamepad size={40} />}
+        title="Mis hobbies" 
+        onClick={toggleHobbies}
+        />
+        <Card icon={<FaStar size={40} />}
+        title="Mis logros" 
+        onClick={togglelogros}
+        />
       </section>
 
       {mostrarExperiencia && (
@@ -63,9 +85,34 @@ function App() {
           <img src={experienciaImg} alt="Visual de experiencia" className="experience-img" />
         </section>
       )}
+
+{mostrarHobbies && (
+        <section className="experience">
+          <h2>Mis Hobbies</h2>
+          <p>
+            Uno de mis mayores gustos es tocar la guitarra y manejar bicleta
+          </p>
+          <img src={experienciaImg} alt="Visual de experiencia" className="experience-img" />
+        </section>
+      )}
+
     </div>
   );
 }
+
+{mostrarlogros && (
+  <section className="experience">
+    <h2>Mis logros</h2>
+    <ul>
+      <li>Desarrollé un sistema de clasificación automática de +30,000 comentarios usando NLP.</li>
+      <li>Implementé dashboards ejecutivos para Bancomext y Sinnia con más de 10 KPIs.</li>
+      <li>Fui mentor de analistas junior y diseñé la estructura de capacitaciones internas.</li>
+      <li>Fui elegido para liderar análisis en casos de crisis de reputación en redes sociales.</li>
+    </ul>
+    <img src={experienciaImg} alt="Visual de logros" className="experience-img" />
+  </section>
+)}
+
 
 function Card({ icon, title, onClick }) {
   return (

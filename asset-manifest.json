@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/rjmt-portafolio/static/css/main.1f16a3ec.css",
-    "main.js": "/rjmt-portafolio/static/js/main.98cfe2b6.js",
+    "main.css": "/rjmt-portafolio/static/css/main.c7a12108.css",
+    "main.js": "/rjmt-portafolio/static/js/main.ba4ac0c4.js",
     "static/js/453.aae4b3bf.chunk.js": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js",
     "static/media/avatar.png": "/rjmt-portafolio/static/media/avatar.84c1f4a2dd5296536af0.png",
     "static/media/hobbieImage.png": "/rjmt-portafolio/static/media/hobbieImage.93390d62d3bdf45b10ed.png",
     "static/media/logrosImage.png": "/rjmt-portafolio/static/media/logrosImage.f3ddb34953f92fffe010.png",
     "static/media/ghibli-data-bg.png": "/rjmt-portafolio/static/media/ghibli-data-bg.ad7d4b834ebbb8cb6ca7.png",
     "static/media/experiencia.jpg": "/rjmt-portafolio/static/media/experiencia.581d45be180e0a455c1c.jpg",
+    "static/media/qr-whatsapp.png": "/rjmt-portafolio/static/media/qr-whatsapp.e5dcab26254922ad94b3.png",
     "index.html": "/rjmt-portafolio/index.html",
-    "main.1f16a3ec.css.map": "/rjmt-portafolio/static/css/main.1f16a3ec.css.map",
-    "main.98cfe2b6.js.map": "/rjmt-portafolio/static/js/main.98cfe2b6.js.map",
+    "main.c7a12108.css.map": "/rjmt-portafolio/static/css/main.c7a12108.css.map",
+    "main.ba4ac0c4.js.map": "/rjmt-portafolio/static/js/main.ba4ac0c4.js.map",
     "453.aae4b3bf.chunk.js.map": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f16a3ec.css",
-    "static/js/main.98cfe2b6.js"
+    "static/css/main.c7a12108.css",
+    "static/js/main.ba4ac0c4.js"
   ]
 }

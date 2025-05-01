@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import avatar from './assets/avatar.png';
 import experienciaImg from './assets/experiencia.jpg';
 import hobbieImg from './assets/hobbieImage.png';
+import logrosImg from './assets/logrosImage.png';
 import { FaLaptopCode, FaStar, FaGamepad } from 'react-icons/fa';
 import fondo from './assets/ghibli-data-bg.png'; // ✅ Solo si está en src/assets
 
@@ -69,7 +70,7 @@ function App() {
           <p>Me apasiona tocar la guitarra, explorar nuevos acordes y componer música. Es una forma de expresión que me ayuda a mantener la concentración y creatividad incluso en proyectos analíticos.</p>
           <p>También disfruto salir en bicicleta, ya sea para relajarme o para recorrer nuevas rutas. El ejercicio y la naturaleza son clave para liberar ideas y mantenerme enfocado.</p>
           <p>Además, soy fan de los videojuegos estratégicos y de rol, donde la lógica, la resolución de problemas y la toma de decisiones también son protagonistas —muy parecido a mi enfoque en datos.</p>
-          <img src={experienciaImg} alt="Visual de hobbies" className="experience-img" />
+          <img src={hobbieImg} alt="Visual de hobbies" className="experience-img" />
         </section>
       )}
 
@@ -82,7 +83,7 @@ function App() {
             <li>Fui mentor de analistas junior y diseñé la estructura de capacitaciones internas.</li>
             <li>Fui elegido para liderar análisis en casos de crisis de reputación en redes sociales.</li>
           </ul>
-          <img src={hobbieImg} alt="Visual de logros" className="experience-img" />
+          <img src={logrosImg} alt="Visual de logros" className="experience-img" />
         </section>
       )}
     </div>

@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import avatar from './assets/avatar.png';
 import experienciaImg from './assets/experiencia.jpg';
 import hobbieImg from './assets/hobbieImage.png';
@@ -9,13 +9,34 @@ import fondo from './assets/ghibli-data-bg.png'; // ✅ Solo si está en src/ass
 
 function App() {
   const [mostrarExperiencia, setMostrarExperiencia] = useState(false);
-  const toggleExperiencia = () => setMostrarExperiencia(prev => !prev);
+  const experienciaRef = useRef(null);
+  const toggleExperiencia = () => {
+    setMostrarExperiencia(prev => {
+      const nuevo = !prev;
+      if (!prev) setTimeout(() => experienciaRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
+      return nuevo;
+    });
+  };
 
   const [mostrarHobbies, setMostrarHobbies] = useState(false);
-  const toggleHobbies = () => setMostrarHobbies(prev => !prev);
+  const hobbiesRef = useRef(null);
+  const toggleHobbies = () => {
+    setMostrarHobbies(prev => {
+      const nuevo = !prev;
+      if (!prev) setTimeout(() => hobbiesRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
+      return nuevo;
+    });
+  };
 
   const [mostrarLogros, setMostrarLogros] = useState(false);
-  const toggleLogros = () => setMostrarLogros(prev => !prev);
+  const logrosRef = useRef(null);
+  const toggleLogros = () => {
+    setMostrarLogros(prev => {
+      const nuevo = !prev;
+      if (!prev) setTimeout(() => logrosRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
+      return nuevo;
+    });
+  };
 
   return (
     <div
@@ -40,8 +61,9 @@ function App() {
             <p><strong>Email:</strong> javitorresin40@gmail.com</p>
           </div>
         </div>
-        <h1>Bienvenido a mi espacio de trabajo</h1>
-        <p>¿Qué quieres saber de mí?</p>
+        <section> 
+          <h1>Bienvenido a mi espacio de trabajo</h1>
+        <h2>¿Qué quieres saber de mí?</h2></section>
       </header>
 
       <section className="cards">
@@ -51,7 +73,7 @@ function App() {
       </section>
 
       {mostrarExperiencia && (
-        <section className="experience">
+        <section ref={experienciaRef} className="experience">
           <h2>Mi experiencia laboral</h2>
           <p>Soy analista de datos con más de 5 años de experiencia en el tratamiento de grandes volúmenes de datos estructurados. En mi día a día, desarrollo soluciones que procesan millones de caracteres a través de consultas SQL optimizadas y pipelines automatizados.</p>
           <p>Trabajo con herramientas como <strong>Python, SQL, Looker, Tableau, BigQuery</strong> y desarrollo procesos ETL eficientes para transformar datos complejos en visualizaciones y reportes accionables.</p>
@@ -64,7 +86,7 @@ function App() {
       )}
 
       {mostrarHobbies && (
-        <section className="experience">
+        <section ref={hobbiesRef} className="experience">
           <h2>Mis hobbies</h2>
           <p>Aunque mi día a día está lleno de datos, algoritmos y dashboards, también valoro el equilibrio a través de actividades que me conectan con mi lado más creativo y activo.</p>
           <p>Me apasiona tocar la guitarra, explorar nuevos acordes y componer música. Es una forma de expresión que me ayuda a mantener la concentración y creatividad incluso en proyectos analíticos.</p>
@@ -75,7 +97,7 @@ function App() {
       )}
 
       {mostrarLogros && (
-        <section className="experience">
+        <section ref={logrosRef} className="experience">
           <h2>Mis logros</h2>
           <ul>
             <li>Desarrollé un sistema de clasificación automática de +30,000 comentarios usando NLP.</li>

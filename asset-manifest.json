@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/rjmt-portafolio/static/css/main.26b7eff8.css",
-    "main.js": "/rjmt-portafolio/static/js/main.720eec75.js",
+    "main.js": "/rjmt-portafolio/static/js/main.f76b5544.js",
     "static/js/453.aae4b3bf.chunk.js": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js",
     "static/media/avatar.png": "/rjmt-portafolio/static/media/avatar.84c1f4a2dd5296536af0.png",
     "static/media/ghibli-data-bg.png": "/rjmt-portafolio/static/media/ghibli-data-bg.a6b7fb6962e2ae7a893a.png",
     "static/media/experiencia.jpg": "/rjmt-portafolio/static/media/experiencia.581d45be180e0a455c1c.jpg",
     "index.html": "/rjmt-portafolio/index.html",
     "main.26b7eff8.css.map": "/rjmt-portafolio/static/css/main.26b7eff8.css.map",
-    "main.720eec75.js.map": "/rjmt-portafolio/static/js/main.720eec75.js.map",
+    "main.f76b5544.js.map": "/rjmt-portafolio/static/js/main.f76b5544.js.map",
     "453.aae4b3bf.chunk.js.map": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26b7eff8.css",
-    "static/js/main.720eec75.js"
+    "static/js/main.f76b5544.js"
   ]
 }

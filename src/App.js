@@ -87,14 +87,24 @@ const togglelogros = () => {
       )}
 
 {mostrarHobbies && (
-        <section className="experience">
-          <h2>Mis Hobbies</h2>
-          <p>
-            Uno de mis mayores gustos es tocar la guitarra y manejar bicleta
-          </p>
-          <img src={experienciaImg} alt="Visual de experiencia" className="experience-img" />
-        </section>
-      )}
+  <section className="experience">
+    <h2>Mis hobbies</h2>
+    <p>
+      Aunque mi día a día está lleno de datos, algoritmos y dashboards, también valoro el equilibrio a través de actividades que me conectan con mi lado más creativo y activo.
+    </p>
+    <p>
+      Me apasiona tocar la guitarra, explorar nuevos acordes y componer música. Es una forma de expresión que me ayuda a mantener la concentración y creatividad incluso en proyectos analíticos.
+    </p>
+    <p>
+      También disfruto salir en bicicleta, ya sea para relajarme o para recorrer nuevas rutas. El ejercicio y la naturaleza son clave para liberar ideas y mantenerme enfocado.
+    </p>
+    <p>
+      Además, soy fan de los videojuegos estratégicos y de rol, donde la lógica, la resolución de problemas y la toma de decisiones también son protagonistas —muy parecido a mi enfoque en datos.
+    </p>
+    <img src={experienciaImg} alt="Visual de hobbies" className="experience-img" />
+  </section>
+)}
+
 
 {mostrarLogros && (
   <section className="experience">

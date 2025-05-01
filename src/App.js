@@ -22,7 +22,7 @@ function App() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'repeat',
         minHeight: '100vh'
       }}
     >

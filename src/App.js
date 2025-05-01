@@ -4,8 +4,10 @@ import avatar from './assets/avatar.png';
 import experienciaImg from './assets/experiencia.jpg';
 import hobbieImg from './assets/hobbieImage.png';
 import logrosImg from './assets/logrosImage.png';
-import { FaLaptopCode, FaStar, FaGamepad, FaXTwitter, FaInstagram, FaLinkedin  } from 'react-icons/fa6';
+import { FaLaptopCode, FaStar, FaGamepad, FaXTwitter, FaInstagram, FaLinkedin, FaDownload   } from 'react-icons/fa6';
 import fondo from './assets/ghibli-data-bg.png'; // ✅ Solo si está en src/assets
+import cvPDF from './assets/CV-Ramon-Javier-Monroy-Torre.pdf';
+
 
 function App() {
   const [mostrarExperiencia, setMostrarExperiencia] = useState(false);
@@ -106,6 +108,10 @@ function App() {
       <p><strong>Empresa:</strong> Sinnia, Data Laboratory</p>
       <p><strong>Puesto:</strong> Senior Data Analyst</p>
       <p><strong>Email:</strong> javitorresin40@gmail.com</p>
+      <a href={cvPDF} download className="boton-cv-icon">
+  <FaDownload size={16} />
+  <span>CV</span>
+</a>
     </div>
     <div className="qr-box">
       <img src={require('./assets/qr-whatsapp.png')} alt="QR WhatsApp" className="qr-img" />

@@ -96,10 +96,6 @@ const togglelogros = () => {
         </section>
       )}
 
-    </div>
-  );
-}
-
 {mostrarLogros && (
   <section className="experience">
     <h2>Mis logros</h2>
@@ -112,6 +108,10 @@ const togglelogros = () => {
     <img src={experienciaImg} alt="Visual de logros" className="experience-img" />
   </section>
 )}
+    </div>
+  );
+}
+
 
 
 function Card({ icon, title, onClick }) {

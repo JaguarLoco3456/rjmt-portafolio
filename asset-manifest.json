@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/rjmt-portafolio/static/css/main.0800d211.css",
-    "main.js": "/rjmt-portafolio/static/js/main.2195cbab.js",
+    "main.css": "/rjmt-portafolio/static/css/main.a3c395c7.css",
+    "main.js": "/rjmt-portafolio/static/js/main.903328ed.js",
     "static/js/453.aae4b3bf.chunk.js": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js",
     "static/media/avatar.png": "/rjmt-portafolio/static/media/avatar.84c1f4a2dd5296536af0.png",
     "static/media/hobbieImage.png": "/rjmt-portafolio/static/media/hobbieImage.93390d62d3bdf45b10ed.png",
     "static/media/logrosImage.png": "/rjmt-portafolio/static/media/logrosImage.f3ddb34953f92fffe010.png",
     "static/media/ghibli-data-bg.png": "/rjmt-portafolio/static/media/ghibli-data-bg.ad7d4b834ebbb8cb6ca7.png",
     "static/media/experiencia.jpg": "/rjmt-portafolio/static/media/experiencia.581d45be180e0a455c1c.jpg",
+    "static/media/CV-Ramon-Javier-Monroy-Torre.pdf": "/rjmt-portafolio/static/media/CV-Ramon-Javier-Monroy-Torre.97ad391b347ce47f9e6a.pdf",
     "static/media/qr-whatsapp.png": "/rjmt-portafolio/static/media/qr-whatsapp.e5dcab26254922ad94b3.png",
     "index.html": "/rjmt-portafolio/index.html",
-    "main.0800d211.css.map": "/rjmt-portafolio/static/css/main.0800d211.css.map",
-    "main.2195cbab.js.map": "/rjmt-portafolio/static/js/main.2195cbab.js.map",
+    "main.a3c395c7.css.map": "/rjmt-portafolio/static/css/main.a3c395c7.css.map",
+    "main.903328ed.js.map": "/rjmt-portafolio/static/js/main.903328ed.js.map",
     "453.aae4b3bf.chunk.js.map": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0800d211.css",
-    "static/js/main.2195cbab.js"
+    "static/css/main.a3c395c7.css",
+    "static/js/main.903328ed.js"
   ]
 }

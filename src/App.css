@@ -1,4 +1,4 @@
-/* src/App.css */
+/* --- ESTRUCTURA GENERAL --- */
 .App {
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
@@ -10,6 +10,11 @@
   margin-top: 40px;
 }
 
+p {
+  text-align: justify;
+}
+
+/* --- BIENVENIDA --- */
 .bienvenidos {
   background: #ffffff;
   border-radius: 12px;
@@ -24,7 +29,7 @@
   display: block;
 }
 
-
+/* --- AVATAR Y COMENTARIO --- */
 .avatar {
   width: 180px;
   height: 180px;
@@ -34,6 +39,98 @@
   margin-bottom: 20px;
 }
 
+.avatar-con-burbuja {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nube-comentario {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  font-size: 14px;
+  color: #333;
+  max-width: 200px;
+  animation: aparecer 0.4s ease-out;
+  z-index: 10;
+}
+
+.nube-comentario::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 16px;
+  border-width: 8px 8px 0 8px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- INFORMACIÓN Y QR --- */
+.perfil-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.info-y-qr {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.info-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  max-width: 300px;
+  font-size: 16px;
+  color: #333;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #111;
+}
+
+.qr-box {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin-top: 4px;
+}
+
+.qr-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* --- SECCIONES Y CARDS --- */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +159,7 @@
   color: #555;
 }
 
+/* --- EXPERIENCIA / HOBBIES / LOGROS --- */
 .experience {
   max-width: 800px;
   margin: 40px auto;
@@ -76,61 +174,37 @@
 
 .experience-img {
   width: 100%;
-  max-width: 400px; /* antes era 600px */
+  max-width: 400px;
   margin: 30px auto 0;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   display: block;
 }
 
-
-.perfil-contenedor {
+/* --- ICONOS DE REDES SOCIALES (footer) --- */
+.social-icons {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 24px;
+  margin: 60px auto 40px;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 30px;
-  position: relative;
 }
 
-
-.info-box {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-  max-width: 300px;
-  font-size: 16px;
-  color: #333;
-}
-
-.info-box h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 22px;
-  color: #111;
-}
-
-p {
-  text-align: justify;
-}
-
-.social-icons {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+.social-section {
+  margin-top: 200px;
   display: flex;
-  gap: 12px;
-  z-index: 1000;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .icon-box {
   background-color: white;
   border-radius: 8px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,68 +219,4 @@ p {
   background-color: #f0f0f0;
 }
 
-.avatar-con-burbuja {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-
-.nube-comentario {
-  position: absolute;
-  top: -30px;
-  left: -20px;
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 10px 14px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  font-size: 14px;
-  color: #333;
-  max-width: 200px;
-  animation: aparecer 0.4s ease-out;
-  z-index: 10;
-}
-
-/* Opcional: flechita de burbuja tipo cómic */
-.nube-comentario::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  right: 16px;
-  border-width: 8px 8px 0 8px;
-  border-style: solid;
-  border-color: #ffffff transparent transparent transparent;
-}
-
-@keyframes aparecer {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.info-y-qr {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-
-.qr-box {
-  width: 64px;
-  height: 64px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  margin-top: 4px;
-}
-
-
-.qr-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}

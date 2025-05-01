@@ -90,18 +90,6 @@ function App() {
         minHeight: '100vh'
       }}
     >
-      <div className="social-icons">
-  <a href="https://x.com/randompumpking?s=21" target="_blank" rel="noopener noreferrer" className="icon-box">
-    <FaXTwitter size={20} />
-  </a>
-  <a href="https://www.instagram.com/rjavimtorre?igsh=ZzRydGV4ZXBiem5y&utm_source=qr" target="_blank" rel="noopener noreferrer" className="icon-box">
-    <FaInstagram size={20} />
-  </a>
-  <a href="https://www.linkedin.com/in/ram%C3%B3n-javier-monroy-torre-9799b7153/" target="_blank" rel="noopener noreferrer" className="icon-box">
-    <FaLinkedin size={20} />
-  </a>
-</div>
-
       <header className="hero">
       <div className="perfil-contenedor">
   <div className="avatar-con-burbuja">
@@ -137,6 +125,17 @@ function App() {
         <Card icon={<FaGamepad size={40} />} title="Mis hobbies" onClick={toggleHobbies} />
         <Card icon={<FaStar size={40} />} title="Mis logros" onClick={toggleLogros} />
       </section>
+      <div className="social-icons">
+  <a href="https://x.com/randompumpking?s=21" target="_blank" rel="noopener noreferrer" className="icon-box">
+    <FaXTwitter size={20} />
+  </a>
+  <a href="https://www.instagram.com/rjavimtorre?igsh=ZzRydGV4ZXBiem5y&utm_source=qr" target="_blank" rel="noopener noreferrer" className="icon-box">
+    <FaInstagram size={20} />
+  </a>
+  <a href="https://www.linkedin.com/in/ram%C3%B3n-javier-monroy-torre-9799b7153/" target="_blank" rel="noopener noreferrer" className="icon-box">
+    <FaLinkedin size={20} />
+  </a>
+</div>
 
       {mostrarExperiencia && (
         <section ref={experienciaRef} className="experience">
@@ -178,6 +177,7 @@ function App() {
           <img src={logrosImg} alt="Visual de logros" className="experience-img" />
         </section>
       )}
+      
     </div>
   );
 }

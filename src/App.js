@@ -21,7 +21,7 @@ function App() {
   };
 
 /*Constante para el bloque de Mostrar Logros*/
-const [mostrarlogros, setMostrarlogros] = useState(false);
+const [mostrarLogros, setMostrarlogros] = useState(false);
 
 const togglelogros = () => {
   setMostrarlogros((prev) => !prev);
@@ -100,7 +100,7 @@ const togglelogros = () => {
   );
 }
 
-{mostrarlogros && (
+{mostrarLogros && (
   <section className="experience">
     <h2>Mis logros</h2>
     <ul>

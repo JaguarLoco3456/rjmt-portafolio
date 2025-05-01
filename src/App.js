@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import avatar from './assets/avatar.png';
 import experienciaImg from './assets/experiencia.jpg';
 import { FaLaptopCode, FaStar, FaGamepad } from 'react-icons/fa';
+import fondo from './assets/ghibli-data-bg.png';
+
 
 function App() {
 
@@ -29,6 +31,13 @@ const togglelogros = () => {
 
   return (
     <div className="App">
+       style={{
+    backgroundImage: `url(${fondo})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat'
+  }}
       <header className="hero">
         <div className="perfil-contenedor">
           <img src={avatar} alt="Javi" className="avatar" />

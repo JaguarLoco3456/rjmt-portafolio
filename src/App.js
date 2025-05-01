@@ -11,31 +11,31 @@ function App() {
   const [mostrarExperiencia, setMostrarExperiencia] = useState(false);
   const experienciaRef = useRef(null);
   const toggleExperiencia = () => {
-    setMostrarExperiencia(prev => {
-      const nuevo = !prev;
-      if (!prev) setTimeout(() => experienciaRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
-      return nuevo;
-    });
+    const nuevo = !mostrarExperiencia;
+    setMostrarExperiencia(nuevo);
+    setMostrarHobbies(false);
+    setMostrarLogros(false);
+    if (nuevo) setTimeout(() => experienciaRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
   };
 
   const [mostrarHobbies, setMostrarHobbies] = useState(false);
   const hobbiesRef = useRef(null);
   const toggleHobbies = () => {
-    setMostrarHobbies(prev => {
-      const nuevo = !prev;
-      if (!prev) setTimeout(() => hobbiesRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
-      return nuevo;
-    });
+    const nuevo = !mostrarHobbies;
+    setMostrarExperiencia(false);
+    setMostrarHobbies(nuevo);
+    setMostrarLogros(false);
+    if (nuevo) setTimeout(() => hobbiesRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
   };
 
   const [mostrarLogros, setMostrarLogros] = useState(false);
   const logrosRef = useRef(null);
   const toggleLogros = () => {
-    setMostrarLogros(prev => {
-      const nuevo = !prev;
-      if (!prev) setTimeout(() => logrosRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
-      return nuevo;
-    });
+    const nuevo = !mostrarLogros;
+    setMostrarExperiencia(false);
+    setMostrarHobbies(false);
+    setMostrarLogros(nuevo);
+    if (nuevo) setTimeout(() => logrosRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
   };
 
   const frases = [
@@ -153,10 +153,10 @@ function App() {
       {mostrarHobbies && (
         <section ref={hobbiesRef} className="experience">
           <h2>Mis hobbies</h2>
-          <p>En este perfil estamos los fanáticos de los datos,la buena música y el aprendizaje</p>
+          <p>En este perfil somos fanáticos de los datos,la buena música y el aprendizaje.</p>
           <p>Me apasiona tocar la guitarra, explorar nueva música y componer conaciones. Es una forma de expresión que me ayuda a mantener un buen ritmo de vida.</p>
-          <p>También disfruto salir en bicicleta, ya sea para hacer ejercicio o para trasladarme de un lado a otro y enocntrar lugares en la CDMX.</p>
-          <p>Además, soy fan de los uegos estratégicos y de rol como Risk, Monopoly y a veces Uno.</p>
+          <p>También disfruto salir en bicicleta, ya sea para hacer ejercicio o para trasladarme de un lado a otro y encontrar lugares en la CDMX para tomar café.</p>
+          <p>Además, soy fan de los juegos estratégicos y de rol como Risk, Monopoly y a veces Uno.</p>
           <img src={hobbieImg} alt="Visual de hobbies" className="experience-img" />
         </section>
       )}
@@ -165,13 +165,13 @@ function App() {
         <section ref={logrosRef} className="experience">
           <h2>Mis logros</h2>
           <ul>
-            <li> Ayudé a desarrollar un sistema de clasificación automática que segmentó más de 30,000 comentarios y 273 publicaciones de TikTok y X durante una crisis reputacional, utilizando NLP, Python y modelos como Gemini Flash 2.0, todo en un periodo de solo 3 días.</li>
-            <p></p>
             <li>Ayudé a prevenir problematicas de posible escala y a controlar picos de conversación en casos sensibles para distintas organizaciones.</li>
             <p></p>
             <li>Mediante análisis creativo y cualitativo logré anticipar tendencias y diseñar contenido que penetró orgánicamente en la conversación digital, generando más de 16 millones de impresiones por publicación, un incremento significativo en clics y audiencia.</li>
             <p></p>
             <li>Para una empresa del sector asegurador, logramos duplicar las ventas directas a través de medios digitales en menos de 12 meses, reduciendo el costo por emisión y aumentando significativamente el tráfico al sitio web.</li>
+            <p></p>
+            <li> Ayudé a desarrollar un sistema de clasificación automática que segmentó más de 30,000 comentarios y 273 publicaciones de TikTok y X durante una crisis, utilizando NLP, Python y modelos como Gemini Flash 2.0, todo en un periodo de solo 3 días.</li>
             <p></p>
           </ul>
           <img src={logrosImg} alt="Visual de logros" className="experience-img" />

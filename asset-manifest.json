@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rjmt-portafolio/static/css/main.0800d211.css",
-    "main.js": "/rjmt-portafolio/static/js/main.69d6a20e.js",
+    "main.js": "/rjmt-portafolio/static/js/main.2195cbab.js",
     "static/js/453.aae4b3bf.chunk.js": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js",
     "static/media/avatar.png": "/rjmt-portafolio/static/media/avatar.84c1f4a2dd5296536af0.png",
     "static/media/hobbieImage.png": "/rjmt-portafolio/static/media/hobbieImage.93390d62d3bdf45b10ed.png",
@@ -11,11 +11,11 @@
     "static/media/qr-whatsapp.png": "/rjmt-portafolio/static/media/qr-whatsapp.e5dcab26254922ad94b3.png",
     "index.html": "/rjmt-portafolio/index.html",
     "main.0800d211.css.map": "/rjmt-portafolio/static/css/main.0800d211.css.map",
-    "main.69d6a20e.js.map": "/rjmt-portafolio/static/js/main.69d6a20e.js.map",
+    "main.2195cbab.js.map": "/rjmt-portafolio/static/js/main.2195cbab.js.map",
     "453.aae4b3bf.chunk.js.map": "/rjmt-portafolio/static/js/453.aae4b3bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0800d211.css",
-    "static/js/main.69d6a20e.js"
+    "static/js/main.2195cbab.js"
   ]
 }
